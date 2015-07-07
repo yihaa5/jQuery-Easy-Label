@@ -23,8 +23,8 @@ e.g.
 	  'pin': '<img src="https://cdn2.iconfinder.com/data/icons/windows-8-metro-style/128/delete.png" height="16" width="16"/>',
 	  'color': 'orange'
 	  });
-	  
-	  
+
+
 HTML
 ```html
 <p data-stickyid="1">
@@ -38,3 +38,5 @@ HTML
 </p>
 ```
 The **data-stickyid** is used as cookie cache checking. Avoid using the same ID.
+
+Refer to demo here [http://wp.ahcheng.com/wp-content/uploads/jQuery%20Easy%20Label/demo/demo.html](http://wp.ahcheng.com/wp-content/uploads/jQuery%20Easy%20Label/demo/demo.html)
