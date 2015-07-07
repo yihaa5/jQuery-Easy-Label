@@ -1,0 +1,28 @@
+{
+  "name": "jquery-easy-label",
+  "version": "0.0.3",
+  "description": "Creating informative/help text with cookie cache supported.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "jquery-plugin",
+    "ecosystem:jquery",
+    "jquery",
+    "label",
+    "sticky",
+    "removable"
+  ],
+  "author": {
+    "name": "Ah Cheng",
+    "url": "https://github.com/yihaa5"
+  },
+  "license": "ISC",
+  "docs": "https://github.com/yihaa5/jQuery-Easy-Label",
+  "download": "https://github.com/yihaa5/jQuery-Easy-Label",
+  "demo": "http://wp.ahcheng.com/wp-content/uploads/jQuery%20Form%20Toolltip/demo/default.html",
+  "dependencies": {
+    "jquery": ">=1.11"
+  }
+}

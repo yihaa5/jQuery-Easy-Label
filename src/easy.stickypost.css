@@ -1,0 +1,39 @@
+.easy-stickypost {
+    overflow: hidden;
+    display: table;
+    clear: both;
+    padding: 3px;
+    margin: 3px 0px;
+    -webkit-transition: all 500ms ease-out;
+    -moz-transition: all 500ms ease-out;
+    -ms-transition: all 500ms ease-out;
+    -o-transition: all 500ms ease-out;
+    transition: all 500ms ease-out;
+}
+
+    .easy-stickypost:hover {
+        background-color: rgba(139, 210, 245, 0.5);
+    }
+
+.easy-stickypost-delete {
+    float: left;
+    width: 16px;
+    height: 16px;
+    font-size: 100%;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+
+.easy-stickypost-label {
+    float: left;
+}
+
+.easy-stickpost-clear {
+    clear: both;
+    height: 0px;
+}
+
+.easy-stickypost.orange:hover{
+  background-color:rgba(252, 212, 0, 0.6);
+}
