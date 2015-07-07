@@ -1,42 +1,56 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>jQuery - Easy label</title>
-    <link rel="stylesheet" href="../src/easy.stickypost.css" media="screen" title="Easy Sticky Post CSS" charset="utf-8">
-    <script src="https://code.jquery.com/jquery-1.11.3.min.js" charset="utf-8"></script>
-    <script src="../src/easy.stickypost.js" charset="utf-8"></script>
-    <script>
-      $(document).ready(function(){
-        $("#tips1").stickypost({'tooltip': 'alamak','pin': '<span>x</span>'});
-        $("#tips2").stickypost({
-          'cached':false,
-          'tooltip': 'Click here to close it temporarily',
-          'pin': '<img src="https://cdn2.iconfinder.com/data/icons/windows-8-metro-style/128/delete.png" height="16" width="16"/>',
-          'color': 'orange'
-          });
-      });
-    </script>
-  </head>
-  <body>
-      <div id="tips1">
-        <h2>Tips:</h2>
-        <p>Default color with custom delete Pin 'x'</p>
-        <p data-stickyid="1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus rutrum nibh ut rhoncus congue. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-        </p>
-        <p data-stickyid="2">Nulla nec egestas enim. Donec porttitor, quam cursus faucibus facilisis, magna ex condimentum ipsum, a sagittis nulla libero ac velit. Nunc scelerisque arcu eleifend, pellentesque lectus et, porta urna.
-        </p>
-        <p data-stickyid="3">Aliquam fringilla, dolor ut gravida porttitor, urna risus auctor libero, eget dapibus ante sem et ante. Proin erat orci, pulvinar ac tincidunt a, blandit a risus.
-        </p>
-      </div>
+<head>
+  <meta charset="utf-8">
+  <title>jQuery - Easy label</title>
+  <link rel="stylesheet" href="../src/easy.stickypost.css" media="screen" title="Easy Sticky Post CSS" charset="utf-8">
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js" charset="utf-8"></script>
+  <script src="../src/easy.stickypost.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <script>
+  $(document).ready(function(){
+    $("#tips1").stickypost({'tooltip': 'alamak','pin': '<span>x</span>'});
+    $("#tips2").stickypost({
+      'cached':false,
+      'tooltip': 'Click here to close it temporarily',
+      'pin': '<img src="https://cdn2.iconfinder.com/data/icons/windows-8-metro-style/128/delete.png" height="16" width="16"/>',
+      'color': 'orange'
+    });
+    $("#tips3").stickypost();
+  });
+  </script>
+</head>
+<body>
+  <p>
+    The Script recognizes the data-stickyid attribute and transform them into a sticky post with removable icon.
 
-      <div id="tips2">
-        <h2>Tips 2:</h2>
-        <p>Orange color (hover) with custom delete image Pin</p>
-        <p data-stickyid="1">ABC</p>
-        <p data-stickyid="2">def</p>
-        <p data-stickyid="3">GHI</p>
+  </p>
+  <div id="tips1">
+    <h2>Tips:</h2>
+    <p>Default color with custom delete Pin 'x' and Cookie is turn on (After removing the sticky post, F5 refresh and you shall not see it again)</p>
+    <p data-stickyid="1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus rutrum nibh ut rhoncus congue. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+    </p>
+    <p data-stickyid="2">Nulla nec egestas enim. Donec porttitor, quam cursus faucibus facilisis, magna ex condimentum ipsum, a sagittis nulla libero ac velit. Nunc scelerisque arcu eleifend, pellentesque lectus et, porta urna.
+    </p>
+    <p data-stickyid="3">Aliquam fringilla, dolor ut gravida porttitor, urna risus auctor libero, eget dapibus ante sem et ante. Proin erat orci, pulvinar ac tincidunt a, blandit a risus.
+    </p>
+  </div>
 
-      </div>
-  </body>
+  <div id="tips2">
+    <h2>Tips 2:</h2>
+    <p>Orange color (hover) with custom delete image Pin and no Cookie Check</p>
+    <p data-stickyid="4">ABC</p>
+    <p data-stickyid="5">def</p>
+    <p data-stickyid="6">GHI</p>
+  </div>
+
+  <div id="tips3">
+    <h2>Tips 3:</h2>
+    <p>Default stick post setting. You need to have Awesome font included</p>
+    <p data-stickyid="7">This is Awesome Delete icon 1</p>
+    <p data-stickyid="8">This is Awesome Delete icon 2</p>
+    <p data-stickyid="9">This is Awesome Delete icon 3</p>
+  </div>
+  <button onclick="javascript:document.cookie = 'easy_stickypost=;;path=/';window.location.reload();">Clear Cookie and refresh</button>
+</body>
 </html>
