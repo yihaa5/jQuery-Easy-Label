@@ -15,7 +15,7 @@ See demo/demo.html file for a simple demo. Some configuration can be done:
  - Specifying a label which is removable or Always show.
 
 e.g.
-
+```
    $("#tips1").stickypost({'tooltip': 'alamak','pin': '<span>x</span>'});
    $("#tips2").stickypost({
      'cached':false,
@@ -24,7 +24,7 @@ e.g.
      'color': 'orange'
    });
    $("#tips3").stickypost();
-
+```
 
 HTML
 ```html
